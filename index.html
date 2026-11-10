@@ -1,16 +1,239 @@
-## Hi there 👋
 
-<!--
-**GEASandCO/geasandco** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Search within code
+ 
+‎Index.html‎
++278
+Lines changed: 278 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GEAS&CO | Diseño Gráfico</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #080808;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #292929;
+}
+.logo {
+  color: #d4af37;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 13px;
+}
+.hero {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  background: radial-gradient(circle, #29220d, #080808 65%);
+}
+.hero h1 {
+  color: #d4af37;
+  font-size: 58px;
+  letter-spacing: 5px;
+}
+.hero p {
+  color: #ccc;
+  margin: 18px 0 28px;
+  font-size: 16px;
+}
+.boton {
+  display: inline-block;
+  background: #d4af37;
+  color: black;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.boton:hover {
+  background: white;
+}
+section {
+  padding: 65px 20px;
+  text-align: center;
+}
+h2 {
+  color: #d4af37;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.subtitulo {
+  color: #aaa;
+  margin-bottom: 35px;
+}
+.contenedor {
+  max-width: 1000px;
+  margin: auto;
+}
+.servicios, .portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.tarjeta {
+  background: #151515;
+  border: 1px solid #4b3c13;
+  border-radius: 10px;
+  padding: 35px 20px;
+  transition: 0.3s;
+}
+.tarjeta:hover {
+  border-color: #d4af37;
+  transform: translateY(-5px);
+}
+.tarjeta h3 {
+  color: #d4af37;
+  margin-bottom: 12px;
+}
+.tarjeta p {
+  color: #bbb;
+  line-height: 1.5;
+}
+.muestra {
+  height: 170px;
+  background: linear-gradient(135deg, #29220d, #080808);
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  color: #d4af37;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.contacto {
+  background: #111;
+}
+.contacto p {
+  color: #ccc;
+  margin: 18px 0 28px;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  border-top: 1px solid #292929;
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+  nav a {
+    margin: 0 7px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">GEAS&CO</div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <h1>GEAS&CO</h1>
+  <p>CREATIVIDAD QUE SE CONVIERTE EN IDENTIDAD.</p>
+  <a href="#portfolio" class="boton">VER NUESTROS DISEÑOS</a>
+</section>
+<section id="servicios">
+  <div class="contenedor">
+    <h2>NUESTROS SERVICIOS</h2>
+    <p class="subtitulo">Diseñamos ideas y creamos identidades.</p>
+    <div class="servicios">
+      <div class="tarjeta">
+        <h3>LOGOS</h3>
+        <p>Identidades visuales para marcas y emprendimientos.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>ESCUDOS</h3>
+        <p>Escudos deportivos personalizados.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>FLYERS</h3>
+        <p>Diseños publicitarios para promocionar ideas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="portfolio">
+  <div class="contenedor">
+    <h2>NUESTROS TRABAJOS</h2>
+    <p class="subtitulo">Conocé algunos de nuestros diseños.</p>
+    <div class="portfolio">
+      <div class="tarjeta">
+        <div class="muestra">GEAS&CO</div>
+        <h3>DISEÑO DE LOGO</h3>
+        <p>Identidad de marca.</p>
+      </div>
+      <div class="tarjeta">
+        <div class="muestra">412 BOYS</div>
+        <h3>ESCUDO DEPORTIVO</h3>
+        <p>Diseño de identidad futbolística.</p>
+      </div>
+      <div class="tarjeta">
+        <div class="muestra">GEAS DESIGN</div>
+        <h3>FLYER</h3>
+        <p>Diseño publicitario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contacto" id="contacto">
+  <h2>CONTACTO</h2>
+  <p>¿Tenés una idea? ¡Hagámosla realidad!</p>
+  <a
+    href="https://www.instagram.com/geasandco/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="boton">
+    SEGUINOS EN INSTAGRAM
+  </a>
+</section>
+</main>
+<footer>
+  © 2026 GEAS&CO - Todos los derechos reservados.
+</footer>
+</body>
+  </html>
